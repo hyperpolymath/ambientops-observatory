@@ -1,0 +1,47 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/Manifest.toml
+/deps/deps.jl
+/deps/build.log
+/deps/downloads/
+/deps/usr/
+/deps/src/
+
+# Build artifacts
+/build/
+/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Reports (user-generated)
+/reports/*.xlsx
+/reports/*.html
+/reports/*.csv
+/reports/*.json
+/reports/*.md
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
+*.tmp
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Backup files
+*.bak
+*.backup
+
+# Don't ignore example reports
+!/examples/reports/*.md

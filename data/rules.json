@@ -1,0 +1,80 @@
+{
+  "categories": {
+    "productivity": [
+      "office", "word", "excel", "powerpoint", "notepad", "writer",
+      "calc", "impress", "libreoffice", "openoffice", "onlyoffice"
+    ],
+    "graphics": [
+      "photoshop", "illustrator", "gimp", "inkscape", "krita",
+      "paint", "image", "photo", "design", "drawing"
+    ],
+    "development": [
+      "vscode", "visual studio", "sublime", "atom", "idea", "pycharm",
+      "eclipse", "netbeans", "code", "editor", "ide", "compiler"
+    ],
+    "communication": [
+      "slack", "teams", "zoom", "discord", "skype", "telegram",
+      "whatsapp", "messenger", "chat", "video", "conference"
+    ],
+    "media": [
+      "vlc", "spotify", "itunes", "netflix", "youtube", "player",
+      "music", "video", "streaming", "media"
+    ],
+    "security": [
+      "antivirus", "firewall", "vpn", "password", "norton", "mcafee",
+      "kaspersky", "bitdefender", "security", "protection"
+    ],
+    "utilities": [
+      "cleaner", "optimizer", "backup", "archive", "winrar", "7zip",
+      "compression", "utility", "tool"
+    ],
+    "gaming": [
+      "steam", "game", "epic", "gog", "gaming", "play"
+    ],
+    "education": [
+      "learning", "education", "tutorial", "course", "training",
+      "study", "academic"
+    ],
+    "business": [
+      "crm", "erp", "accounting", "invoice", "business", "enterprise",
+      "salesforce", "quickbooks"
+    ]
+  },
+  "risk_flags": {
+    "telemetry_keywords": [
+      "telemetry", "analytics", "tracking", "metrics", "usage data",
+      "diagnostic data", "crash reports", "performance monitoring"
+    ],
+    "ad_keywords": [
+      "ad-supported", "advertisements", "sponsored", "ads",
+      "advertising", "promotional"
+    ],
+    "account_keywords": [
+      "requires login", "account required", "sign in required",
+      "registration required", "user account", "must register"
+    ],
+    "pii_keywords": [
+      "personal data", "user information", "profile data",
+      "personally identifiable", "PII", "contact information",
+      "email address", "phone number", "location data"
+    ],
+    "sharing_keywords": [
+      "third party", "partners", "affiliates", "data sharing",
+      "share with", "provide to", "disclose to"
+    ]
+  },
+  "cost_thresholds": {
+    "free": 0.0,
+    "low": 10.0,
+    "medium": 50.0,
+    "high": 100.0,
+    "premium": 500.0
+  },
+  "privacy_weights": {
+    "shares_data": 0.4,
+    "collects_pii": 0.3,
+    "has_telemetry": 0.2,
+    "requires_account": 0.1,
+    "has_ads": 0.1
+  }
+}
