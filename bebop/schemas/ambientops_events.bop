@@ -1,0 +1,49 @@
+// ambientops_events.bop - Bebop schemas for observability ingestion
+
+struct PlacementDecision {
+  string operation_id;
+  string package_id;
+  string intent;
+  string profile;
+  string selected_surface;
+  string result;
+  bool dry_run;
+}
+
+struct LogScanFinding {
+  string source;
+  string category;
+  string line;
+}
+
+struct LogScan {
+  LogScanFinding[] findings;
+  string since;
+  int32 limit;
+}
+
+struct StateVaultCapture {
+  string operation_id;
+  string package_id;
+  string vault_path;
+  string entry_dir;
+  bool dry_run;
+}
+
+struct UnmanagedEntry {
+  string path;
+  string name;
+  string kind;
+  string origin;
+  string suggested_surface;
+  string suggested_route;
+  string origin_confidence;
+}
+
+struct UnmanagedDetection {
+  UnmanagedEntry[] entries;
+}
+
+struct UnmanagedSuggestion {
+  UnmanagedEntry[] entries;
+}

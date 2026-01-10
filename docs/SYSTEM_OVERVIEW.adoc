@@ -1,0 +1,30 @@
+= System Observatory Overview
+:toc: left
+:toclevels: 2
+:icons: font
+
+This document provides a system-level overview for AmbientOps observability.
+
+== Role
+
+System Observatory observes, correlates, and recommends. It does not mutate
+system state.
+
+== Inputs
+
+* Audit logs from DNFinition/TotalUpdate
+* Recovery timelines from Total Recall
+* User-approved feedback bundles from feedback-a-tron
+
+== Outputs
+
+* Health metrics and trends
+* Change timelines
+* Risk alerts and forecasts
+* Recommendations for Operating Theatre
+
+== Integration Boundaries
+
+* Never executes changes
+* Never acts as a source of truth
+* Always references provenance for recommendations

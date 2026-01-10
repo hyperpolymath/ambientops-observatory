@@ -150,6 +150,19 @@ sysobs dashboard
 sysobs query "disk.usage" --since "7d"
 ----
 
+== Bebop Converter (Observability Channel)
+
+Convert NDJSON events into Bebop frames when `bebopc` is available:
+
+[source,bash]
+----
+mix sysobs.bebop_convert --input /path/to/events.jsonl --outdir /path/to/out
+----
+
+Schemas live at `bebop/schemas/ambientops_events.bop`.
+
+If `bebopc` is not available, the converter writes JSON payloads instead.
+
 == Ecosystem Analysis
 
 For a comprehensive analysis of integration seams, failure modes, and security considerations across the entire AmbientOps System Tools ecosystem, see:
@@ -162,6 +175,15 @@ This analysis covers:
 * Confidence scoring correctness
 * O(n²) correlation optimization
 * "Never source of truth" principle enforcement
+
+== System Overview
+
+See link:docs/SYSTEM_OVERVIEW.adoc[docs/SYSTEM_OVERVIEW.adoc] for data flow and boundaries.
+
+== Idris2 Policy Gate
+
+Outbound payloads are validated by the AmbientOps Idris2 checker before any
+egress. See `docs/IDRIS2_INTEGRATION.adoc`.
 
 == License
 

@@ -8,7 +8,8 @@
        (created . "2026-01-02T19:45:00+00:00")
        (updated . "2026-01-03T12:00:00+00:00")
        (project . "System Observatory")
-       (repo . "system-observatory")))
+       (repo . "system-observatory")
+       (egress-checker . "Idris2 policy gate")))
 
     (current-position
       ((phase . "Phase 1: Core Implementation")
